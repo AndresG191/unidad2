@@ -6,10 +6,10 @@ public class S5_DestruyeObjetos : MonoBehaviour
 {
 
     private void OnCollisionEnter(Collision other){
-        GameObject objeto = other.GameObject;
+        GameObject objeto = other.gameObject;
         //if (objeto.name != "Plane" && objeto.name != "Muro" && objeto.name !="Muro2"){
-        if(!objecto.CompareTag("NoRompible")){
-            Destroy(object);
+        if(!objeto.CompareTag("NoRompible")){
+            Destroy(objeto);
         }
     }
  

@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class S3_Rotacion_Forma1 : MonoBehaviour
 {
-    // Start is called before the first frame update
+   [SerializeField] private float velocidad = 15;
+
     void Start()
     {
         
@@ -13,10 +14,7 @@ public class S3_Rotacion_Forma1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float velocidad =15;
-        float angulos = 5;
-                        //x     //y     //z
+        float angulos = 5 * Time.deltaTime * velocidad;
         transform.Rotate(0, angulos, 0);
-        
     }
 }

@@ -33,7 +33,7 @@ public class S4_MovRotCompuesto : MonoBehaviour
          if(Input.GetKeyDown(KeyCode.Q)){
             transform.Rotate(0, velocidad_rotacion * Time.deltaTime, 0);
         }   else if(Input.GetKeyDown(KeyCode.E)){
-            transform.Rotate(0, -1 * velocidad_rotacion * Time.deltaTimem 0);
+            transform.Rotate(0, -1 * velocidad_rotacion * Time.deltaTime, 0);
         }
     }
 }
