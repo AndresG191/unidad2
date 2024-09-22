@@ -19,11 +19,11 @@ public class S1_Movimiento_Forma1 : MonoBehaviour
      
         //transform.Translate(Vector3.forward);   
         transform.Translate(constante_velocidad * Time.deltaTime* new Vector3(0,0,1));
-
+        }
         if(Input.GetKey(KeyCode.S)){
-        transform.Translate(constante_velocidad * Time.deltaTime* new Vector3(0,0,1));
+        transform.Translate(constante_velocidad * -1* Time.deltaTime* new Vector3(0,0,1));
 
         }
       }
     }
-}
+

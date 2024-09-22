@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 using TMPro;
 public class ChangeScene : MonoBehaviour
 {
-int puntuacion_score; 
+int puntuacion_score=0; 
     [SerializeField] TextMeshProUGUI valor_score;
 
     // Update is called once per frame
@@ -15,11 +15,11 @@ int puntuacion_score;
         if(index_scene_active == 0){ //inicio
          
           if(Input.GetKeyDown(KeyCode.Space)){
-            SceneManager.LoadScene(1); //Escena del juego         
+            SceneManager.LoadScene(3); //Escena del juego         
           }  
 
         }
-        else if(index_scene_active == 1){ //juego
+        else if(index_scene_active == 3){ //juego
 
         }
         else{ //escena final - index 2

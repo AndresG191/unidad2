@@ -14,4 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/MiniJuego1/M1_Inicio.unity
     guid: d0a003abf6824ff4899b06da39b68e4a
+  - enabled: 1
+    path: Assets/ChangeSceneScore/EjemploCorrutina2.unity
+    guid: c20e8ba347036004b9d20720688dcbe6
+  - enabled: 1
+    path: Assets/ChangeSceneScore/Fin.unity
+    guid: 58e61acbcd5fc34479fe69e42c0d7ff7
+  - enabled: 1
+    path: Assets/ChangeSceneScore/Inicio.unity
+    guid: 1402203e90569dc4391c44f6e173d909
   m_configObjects: {}

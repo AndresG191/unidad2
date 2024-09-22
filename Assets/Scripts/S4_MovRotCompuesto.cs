@@ -17,22 +17,22 @@ public class S4_MovRotCompuesto : MonoBehaviour
     // Update is called once per frame
     void Update()
     {   //arriba - abajo
-        if(Input.GetKeyDown(KeyCode.W)){
+        if(Input.GetKey(KeyCode.W)){
             transform.position += velocidad_movimiento * Time.deltaTime * transform.forward;
-        }   else if(Input.GetKeyDown(KeyCode.S)){
+        }   else if(Input.GetKey(KeyCode.S)){
             transform.position += velocidad_movimiento * -1 * Time.deltaTime * transform.forward;
             
         }
             //izquierda derecha 
-         if(Input.GetKeyDown(KeyCode.A)){
+         if(Input.GetKey(KeyCode.A)){
             transform.position += velocidad_movimiento * -1* Time.deltaTime * transform.right;
-        }   else if(Input.GetKeyDown(KeyCode.D)){
+        }   else if(Input.GetKey(KeyCode.D)){
             transform.position += velocidad_movimiento * Time.deltaTime * transform.right;            
         }
             //rotar izquierda - rotar derecha
-         if(Input.GetKeyDown(KeyCode.Q)){
+         if(Input.GetKey(KeyCode.Q)){
             transform.Rotate(0, velocidad_rotacion * Time.deltaTime, 0);
-        }   else if(Input.GetKeyDown(KeyCode.E)){
+        }   else if(Input.GetKey(KeyCode.E)){
             transform.Rotate(0, -1 * velocidad_rotacion * Time.deltaTime, 0);
         }
     }
